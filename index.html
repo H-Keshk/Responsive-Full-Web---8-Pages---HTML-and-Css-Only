@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/mutual.css">
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <aside>
+      <p class="aside-title">Keshk</p>
+      <ul>
+        <li>
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-view-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2m0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14"
+              />
+            </svg>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-gear"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
+              />
+              <path
+                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
+              />
+            </svg>
+            <p>Settings</p>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-ui-checks-grid"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"
+              />
+            </svg>
+            <p>Projects</p>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-mortarboard-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"
+              />
+              <path
+                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"
+              />
+            </svg>
+            <p>Courses</p>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+            <p>Friends</p>
+          </a>
+        </li>
+        <li>
+          <a href="files.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-file-earmark"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"
+              />
+            </svg>
+            <p>Files</p>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-credit-card"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"
+              />
+              <path
+                d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+              />
+            </svg>
+            <p>Plans</p>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header>
+        <div class="left-side">
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+          <input
+            type="search"
+            placeholder="Type A Keyword"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Type A Keyword'"
+          />
+        </div>
+        <div class="right-side">
+          <div class="notif">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-bell"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+              />
+            </svg>
+          </div>
+          <a href="profile.html"
+            ><img src="imgs/avatar.png" class="prof-pic"
+          /></a>
+        </div>
+      </header>
+      <div class="board">
+        <h1>Dashboard</h1>
+        <div class="body-grid">
+          <div class="card welcome">
+            <div class="card-head">
+              <div class="greet">
+                <h2>Welcome</h2>
+                <span>Keshk</span>
+              </div>
+              <img src="imgs/welcome.png" />
+            </div>
+            <div class="card-body">
+              <img src="imgs/avatar.png" />
+              <div class="info">
+                <div class="name">
+                  <p>Huda Keshk</p>
+                  <span>Developer</span>
+                </div>
+                <div class="projs">
+                  <p>80</p>
+                  <span>Projects</span>
+                </div>
+                <div class="earned">
+                  <p>$8500</p>
+                  <span>Earned</span>
+                </div>
+              </div>
+            </div>
+            <button><a href="profile.html">Profile</a></button>
+          </div>
+          <div class="card draft">
+            <div class="card-head">
+              <h2>Quick Draft</h2>
+              <span>Write a draft for your ideas</span>
+            </div>
+            <div class="card-body">
+              <input type="text" name="title" placeholder="Title" />
+              <textarea
+                name="thoughts"
+                placeholder="Your Thought"
+                rows="7"
+              ></textarea>
+            </div>
+            <button>Save</button>
+          </div>
+          <div class="card targets">
+            <div class="card-head">
+              <h2>Yearly Targets</h2>
+              <span>Targets of the year</span>
+            </div>
+            <div class="card-body">
+              <div class="money">
+                <div class="logo">$</div>
+                <div class="stats">
+                  <span>Money</span>
+                  <h3>$20.000</h3>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="trgt-projs">
+                <div class="logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-code-slash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                    />
+                  </svg>
+                </div>
+                <div class="stats">
+                  <span>Projects</span>
+                  <h3>24</h3>
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="team">
+                <div class="logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-person-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                </div>
+                <div class="stats">
+                  <span>Team</span>
+                  <h3>12</h3>
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tickets">
+            <div class="card-head">
+              <h2>Tickets statistics</h2>
+              <span>everything about support tickets</span>
+            </div>
+            <div class="card-body">
+              <div class="ticket">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-card-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+                  />
+                  <path
+                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                  />
+                </svg>
+                <b>2500</b>
+                <span>Total</span>
+              </div>
+              <div class="ticket">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-opencollective"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-opacity=".4"
+                    d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z"
+                  />
+                  <path
+                    d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z"
+                  />
+                </svg>
+                <b>500</b>
+                <span>Pending</span>
+              </div>
+              <div class="ticket">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-check-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                  />
+                  <path
+                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                  />
+                </svg>
+                <b>1900</b>
+                <span>Closed</span>
+              </div>
+              <div class="ticket">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-x-square"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+                <b>100</b>
+                <span>Deleted</span>
+              </div>
+            </div>
+          </div>
+          <div class="card news">
+            <div class="card-head">
+              <h2>Latest news</h2>
+            </div>
+            <div class="card-body">
+              <div class="main-card">
+                <img src="imgs/news-01.png" class="news-pic" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <h3>created SASS section</h3>
+                    <span>new SASS examples & tutorials</span>
+                  </div>
+                  <div class="inform">3 days ago</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/news-02.png" class="news-pic" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <h3>changed the design</h3>
+                    <span>a brand new website design</span>
+                  </div>
+                  <div class="inform">5 days ago</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/news-03.png" class="news-pic" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <h3>team increased</h3>
+                    <span>3 developersjoined the team</span>
+                  </div>
+                  <div class="inform">7 days ago</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/news-04.png" class="news-pic" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <h3>Added payment gateway</h3>
+                    <span>many new payment gatways added</span>
+                  </div>
+                  <div class="inform">9 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tasks">
+            <div class="card-head">
+              <h2>latest tasks</h2>
+            </div>
+            <div class="card-body">
+              <div class="task">
+                <div class="task-dtls">
+                  <h3>Record one new video</h3>
+                  <span>record python create exe project</span>
+                </div>
+                <div class="remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-trash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="task">
+                <div class="task-dtls">
+                  <h3>write article</h3>
+                  <span>Write Low Level vs High Level Languages</span>
+                </div>
+                <div class="remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-trash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="task">
+                <div class="task-dtls">
+                  <h3>Finish Project</h3>
+                  <span>Publish Academy Programming Project</span>
+                </div>
+                <div class="remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-trash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="task removed">
+                <div class="task-dtls">
+                  <h3><del>Attend The Meeting</del></h3>
+                  <span
+                    ><del
+                      >Attend The Project Business Analysis Meeting</del
+                    ></span
+                  >
+                </div>
+                <div class="remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-trash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="task">
+                <div class="task-dtls">
+                  <h3>Finish Lesson</h3>
+                  <span>Finish Teaching Flex Box</span>
+                </div>
+                <div class="remove">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-trash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                    />
+                    <path
+                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card srch-itms">
+            <div class="card-head">
+              <h2>Top Search Items</h2>
+              <div class="sub-title">
+                <span>keyword</span>
+                <span>search count</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="item">
+                <p>programming</p>
+                <div class="inform">220</div>
+              </div>
+              <div class="item">
+                <p>javaScript</p>
+                <div class="inform">180</div>
+              </div>
+              <div class="item">
+                <p>PHP</p>
+                <div class="inform">160</div>
+              </div>
+              <div class="item">
+                <p>code</p>
+                <div class="inform">145</div>
+              </div>
+              <div class="item">
+                <p>design</p>
+                <div class="inform">110</div>
+              </div>
+              <div class="item">
+                <p>logic</p>
+                <div class="inform">95</div>
+              </div>
+            </div>
+          </div>
+          <div class="card uploads">
+            <div class="card-head">
+              <h2>Latest uploads</h2>
+            </div>
+            <div class="card-body">
+              <div class="main-card">
+                <img src="imgs/pdf.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-file.pdf</p>
+                    <span>Keshk</span>
+                  </div>
+                  <div class="inform">2.9mb</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/avi.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-video-file.avi</p>
+                    <span>Admin</span>
+                  </div>
+                  <div class="inform">4.9mb</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/psd.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-psd-file.pdf</p>
+                    <span>Huda</span>
+                  </div>
+                  <div class="inform">4.5mb</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/zip.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-zip-file.pdf</p>
+                    <span>User</span>
+                  </div>
+                  <div class="inform">8.9mb</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/dll.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-DLL-file.pdf</p>
+                    <span>Admin</span>
+                  </div>
+                  <div class="inform">4.9mb</div>
+                </div>
+              </div>
+              <div class="main-card">
+                <img src="imgs/eps.svg" class="type" />
+                <div class="card-dtls">
+                  <div class="item-title">
+                    <p>my-Eps-file.pdf</p>
+                    <span>Designer</span>
+                  </div>
+                  <div class="inform">8.9mb</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card progress">
+            <div class="card-head">
+              <h2>Last project progress</h2>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>got the project</li>
+                <li>started the project</li>
+                <li>the project about to finish</li>
+                <li>the last project</li>
+                <li>finish the project & get money</li>
+              </ul>
+            </div>
+            <img src="imgs/project.png" class="back-img" />
+          </div>
+          <div class="card remind">
+            <div class="card-head">
+              <h2>Reminders</h2>
+            </div>
+            <div class="card-bod">
+              <div class="alarm">
+                <h3>Check my tasks list</h3>
+                <span>28/09/2024 - 12:00am</span>
+              </div>
+              <div class="alarm">
+                <h3>Check my projects</h3>
+                <span>26/10/2024 - 12:00am</span>
+              </div>
+              <div class="alarm">
+                <h3>Call my clients</h3>
+                <span>05/11/2024 - 12:00am</span>
+              </div>
+              <div class="alarm">
+                <h3>finish the development workshop</h3>
+                <span>20/12/2024 - 12:00am</span>
+              </div>
+            </div>
+          </div>
+          <div class="card post">
+            <div class="card-head">
+              <h2>Latest Post</h2>
+              <div class="user-acc">
+                <img src="imgs/avatar.png" />
+                <div class="user-dtls">
+                  <h3>Huda Keshk</h3>
+                  <span>about 3 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                You can fool all of the people some of the time, and some of the
+                people all of the time, but you can't fool all of the people all
+                of the time.
+              </p>
+              <div class="likes-and-comments">
+                <div class="likes">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-suit-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                    />
+                  </svg>
+                  <span>1.8K</span>
+                </div>
+                <div class="comments">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-chat-right-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+                    />
+                    <path
+                      d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                    />
+                  </svg>
+                  <span>500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card social">
+            <div class="card-head">
+              <h2>social Media stats</h2>
+            </div>
+            <div class="card-body">
+              <div class="link twitt">
+                <div class="social-stats">
+                  <div class="app">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-twitter-x"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                      />
+                    </svg>
+                  </div>
+                  <p>90K Followers</p>
+                </div>
+                <button>Follow</button>
+              </div>
+              <div class="link fb">
+                <div class="social-stats">
+                  <div class="app">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                      />
+                    </svg>
+                  </div>
+                  <p>2M likes</p>
+                </div>
+                <button>like</button>
+              </div>
+              <div class="link yt">
+                <div class="social-stats">
+                  <div class="app">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                      />
+                    </svg>
+                  </div>
+                  <p>1M subs</p>
+                </div>
+                <button>Subscribe</button>
+              </div>
+              <div class="link in">
+                <div class="social-stats">
+                  <div class="app">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                      />
+                    </svg>
+                  </div>
+                  <p>70K Followers</p>
+                </div>
+                <button>Follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projs-table">
+          <h2>Projects</h2>
+          <div class="responsive-table">
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Finish date</th>
+                <th>client</th>
+                <th>price</th>
+                <th>team</th>
+                <th>status</th>
+              </tr>
+              <tr>
+                <td>ministry wikipedia</td>
+                <td>10 may 2024</td>
+                <td>ministry</td>
+                <td>$5300</td>
+                <td>
+                  <img src="imgs/team-01.png" />
+                  <img src="imgs/team-02.png" />
+                  <img src="imgs/team-03.png" />
+                  <img src="imgs/team-05.png" />
+                </td>
+                <td>
+                  <span>pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Keshk shop</td>
+                <td>12 oct 2023</td>
+                <td>Keshk company</td>
+                <td>$1500</td>
+                <td>
+                  <img src="imgs/team-01.png" />
+                  <img src="imgs/team-02.png" />
+                  <img src="imgs/team-05.png" />
+                </td>
+                <td>
+                  <span>in progress</span>
+                </td>
+              </tr>
+              <tr>
+                <td>bouba app</td>
+                <td>05 sep 2023</td>
+                <td>bouba</td>
+                <td>$800</td>
+                <td>
+                  <img src="imgs/team-02.png" />
+                  <img src="imgs/team-03.png" />
+                </td>
+                <td>
+                  <span>completed</span>
+                </td>
+              </tr>
+              <tr>
+                <td>mahmoud website</td>
+                <td>22 may 2023</td>
+                <td>Mahmoud</td>
+                <td>$600</td>
+                <td>
+                  <img src="imgs/team-01.png" />
+                  <img src="imgs/team-02.png" />
+                </td>
+                <td>
+                  <span>completed</span>
+                </td>
+              </tr>
+              <tr>
+                <td>sayed website</td>
+                <td>24 may 2023</td>
+                <td>sayed</td>
+                <td>$300</td>
+                <td>
+                  <img src="imgs/team-01.png" />
+                  <img src="imgs/team-03.png" />
+                </td>
+                <td>
+                  <span>rejected</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Arina application</td>
+                <td>01 march 2023</td>
+                <td>Arena company</td>
+                <td>$2600</td>
+                <td>
+                  <img src="imgs/team-01.png" />
+                  <img src="imgs/team-02.png" />
+                  <img src="imgs/team-03.png" />
+                  <img src="imgs/team-04.png" />
+                </td>
+                <td>
+                  <span>completed</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
