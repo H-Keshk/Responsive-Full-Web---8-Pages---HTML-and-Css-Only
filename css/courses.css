@@ -10,7 +10,8 @@ aside ul li:nth-child(5) {
 
 /* Main Board */
 .body-grid {
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+   /*  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); */ /*Works perfectly on my local output*/
+ grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));  /*Works perfectly on github output*/
 }
 
 
@@ -41,10 +42,12 @@ aside ul li:nth-child(5) {
     padding: 1.3rem;
 }
 .crd-dtls h3 {
-    font-size: 1.05rem;
+    /*font-size: 1.05rem;*/ /*Works perfectly on my local output*/
+    font-size: 0.9rem; /*Works perfectly on github output*/
 }
 .crd-dtls p {
-    font-size: 0.85rem;
+    /*font-size: 0.85rem;*/ /*Works perfectly on my local output*/
+    font-size: 0.7rem; /*Works perfectly on github output*/
     color: grey;
     margin: 0.75rem 0 2.3rem;
 }
