@@ -99,11 +99,11 @@ input:focus {
 
 .body-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr)); *//*With this code the page runs perfectly on my local output*/
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));/*With this code the page runs perfectly on github output*/
   gap: 1.3rem;
   overflow: hidden;
 }
-
 .card {
   display: flex;
   flex-direction: column;
