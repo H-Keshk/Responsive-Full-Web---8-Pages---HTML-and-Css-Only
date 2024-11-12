@@ -43,6 +43,11 @@ aside ul li:nth-child(6) {
 }
 .contact .bi {
     color: #5e5e5e;
+      transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
 }
 .contact > div:hover .bi {
     color: white;
