@@ -591,6 +591,9 @@ aside ul li:first-child {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.twitt button:hover {
+  background-color: #575757;
+}
 .fb .app {
   background-color: #307cff;
 }
@@ -629,6 +632,9 @@ aside ul li:first-child {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
 }
+.yt button:hover {
+  background-color: var(--dark-red);
+}
 .in .app {
   background-color: rgb(64, 117, 161);
 }
@@ -648,6 +654,9 @@ aside ul li:first-child {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+}
+.in button:hover {
+  background-color: #2f648f;
 }
 .app:hover {
   transform: rotate(7deg);
