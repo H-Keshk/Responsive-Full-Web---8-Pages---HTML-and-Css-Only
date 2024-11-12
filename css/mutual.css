@@ -67,6 +67,7 @@ input:focus {
   --grn: #22c55e;
   --grn-fade: rgba(34, 197, 94, 0.15);
   --red: #f44336;
+  --dark-red: #d10000;
   --red-fade: rgb(244, 67, 54, 0.15);
   --lines: #ededed;
   --trans: all 0.3s;
