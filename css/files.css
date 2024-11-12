@@ -134,7 +134,8 @@ span {
 .files {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  /*grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));*/ /*That Code Works perfectly on my local output*/
+   grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));  /*That code works perfectly on github output*/
   gap: 1rem;
   direction: ltr;
 }
