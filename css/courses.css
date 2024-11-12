@@ -1,0 +1,80 @@
+/* Aside 'Page Name' */
+aside ul li:nth-child(5) {
+  background-color: var(--hover-col);
+  border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+}
+
+/* Main Board */
+.body-grid {
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+}
+
+
+
+/* Card Styling */
+.card {
+    position: relative;
+    padding: 0;
+}
+
+.card > img:first-child {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.card > img:nth-child(2) {
+    position: absolute;
+    width: 4.2rem;
+    top: 3%;
+    left: 5%;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.crd-dtls {
+    padding: 1.3rem;
+}
+.crd-dtls h3 {
+    font-size: 1.05rem;
+}
+.crd-dtls p {
+    font-size: 0.85rem;
+    color: grey;
+    margin: 0.75rem 0 2.3rem;
+}
+.price-stats {
+    position: relative;
+    border-top: 1px solid var(--lines);
+}
+.price-stats::before {
+    position: absolute;
+    content: 'Course Info';
+    background-color: var(--main-col);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.85rem;
+    top: -42%;
+    left: calc(50% - 2.673rem);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.subs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

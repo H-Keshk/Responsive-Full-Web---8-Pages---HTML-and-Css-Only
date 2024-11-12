@@ -1,0 +1,220 @@
+/* Aside 'Page Name' */
+aside ul li:nth-child(3) {
+  background-color: var(--hover-col);
+  border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+}
+
+/* Main Board */
+.board-body {
+  display: grid;
+  grid-template-areas: "bio bio bio" "skills activ activ";
+  gap: 1.3rem;
+}
+@media (max-width: 767px) {
+  .board-body {
+    grid-template-areas: "bio bio bio" "skills skills skills" "activ activ activ";
+  }
+}
+
+/* Profile Information */
+.bio {
+  grid-area: bio;
+  display: flex;
+  flex-direction: row;
+}
+.profile-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  border-right: 1px solid var(--lines);
+}
+.profile-stats img {
+  width: 7rem;
+}
+.profile-stats p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+}
+.lvl {
+  font-weight: 500;
+  font-size: 0.9rem !important;
+}
+.lvl-bar {
+  position: relative;
+  width: 100%;
+  height: 0.32rem;
+  margin: 0.7rem 0;
+}
+.lvl-bar::before {
+  position: absolute;
+  content: "";
+  width: 65%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-col);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  z-index: 1;
+}
+.lvl-bar::after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-back);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.rate {
+  display: flex;
+}
+.rate .bi {
+  color: #ffb600;
+  margin: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+.profile-info {
+  flex: 1;
+}
+.profile-info > div {
+  width: 100%;
+  border-bottom: 1px solid var(--lines);
+  padding: 0.5rem 1rem;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.profile-info > div:hover {
+  background-color: #f9f9f9;
+}
+.profile-info > div:last-child {
+  border: none;
+}
+.more {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  margin-top: 1rem;
+}
+.more p {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.switch {
+  height: 1rem;
+}
+.slider::before {
+  width: 0.8rem;
+  height: 0.8rem;
+  font-size: 0.5rem;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(3.3rem);
+  -webkit-transform: translateX(3.3rem);
+  -moz-transform: translateX(3.3rem);
+  -ms-transform: translateX(3.3rem);
+  -o-transform: translateX(3.3rem);
+}
+@media (max-width: 767px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lvl-bar {
+    width: 30%;
+  }
+  .more p {
+    margin-bottom: 0.7rem;
+  }
+  .profile-stats {
+    border-right: none;
+  }
+}
+
+/* Skills */
+.skills {
+  grid-area: skills;
+}
+.skills .card-body > div {
+  margin: 0.6rem 0 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--lines);
+}
+.skills .card-body > div:last-child {
+  border: none;
+}
+.inform {
+  color: black !important;
+}
+@media (max-width:767px) {
+  .skills .card-body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Activities */
+.activities {
+  grid-area: activ;
+}
+.activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--lines);
+}
+.activity:last-child {
+  border: none;
+}
+.activity-data {
+  display: flex;
+}
+.activity-data img {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 1rem;
+}
+.activity p {
+  font-weight: 500;
+}
+.activity span {
+  font-weight: 600;
+}
+.last {
+  text-align: end;
+}
+@media (max-width:767px) {
+  .activity, .activity-data, .activity-name, .last {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .activity p {
+    margin: 0.65rem 0;
+  }
+  .activity img {
+    margin-right: 0;
+  }
+}

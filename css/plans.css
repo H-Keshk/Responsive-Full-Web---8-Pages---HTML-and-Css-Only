@@ -1,0 +1,123 @@
+/* Aside 'Page Name' */
+aside ul li:last-child {
+  background-color: var(--hover-col);
+  border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+}
+
+/* Main Body Layout */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 1.3rem;
+}
+.plan {
+  background-color: white;
+  padding: 1rem;
+}
+.plan-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: 5px solid white;
+  outline: 5px solid;
+  color: white;
+}
+.plan-head h2 {
+    font-size: 1.4rem;
+}
+.plan-head p {
+    font-size: 2.5rem;
+}
+.plan-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 2rem 0 0;
+}
+.plan-body > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--lines);
+}
+.feature {
+  display: flex;
+  align-items: center;
+}
+.bi-check {
+  width: 1.7rem;
+  color: var(--grn);
+  margin-right: 0.5rem;
+}
+.bi-x-lg {
+  width: 1.15rem;
+  color: var(--red);
+  margin: 0.35rem 0.84rem 0.35rem 0.35rem;
+}
+.info {
+    background-color: #a1a1a1;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.info .bi {
+  width: 1rem;
+  color: white;
+}
+.plan button {
+    margin-top: 1.3rem;
+    padding: 0.2rem 0.8rem;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+
+/* Plan Free */
+.free .plan-head {
+    background-color: var(--grn);
+    outline-color: var(--grn);
+}
+.free button {
+    background-color: var(--grn);
+}
+
+/* Plan Basic */
+.basic .plan-head {
+    background-color: var(--main-col);
+    outline-color: var(--main-col);
+}
+.basic button {
+    background-color: var(--main-col);
+}
+
+/* Plan Premium */
+.gold .plan-head {
+    background-color: var(--orng);
+    outline-color: var(--orng);
+}
+.your-plan {
+    font-size: 1.1rem;
+    color: #8d8d8d;
+    margin: 1.3rem auto 0.7rem;
+}

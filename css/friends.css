@@ -1,0 +1,119 @@
+/* Aside 'Page Name' */
+aside ul li:nth-child(6) {
+  background-color: var(--hover-col);
+  border-radius: 0.35rem;
+  -webkit-border-radius: 0.35rem;
+  -moz-border-radius: 0.35rem;
+  -ms-border-radius: 0.35rem;
+  -o-border-radius: 0.35rem;
+}
+
+/* Main Board */
+.body-grid {
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+}
+
+/* Card Styling */
+.card {
+    padding: 0.5rem 1rem;
+}
+.contact {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contact > div {
+    background-color: var(--dark-back);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.contact > div:hover  {
+    background-color: var(--main-col);
+}
+.contact .bi {
+    color: #5e5e5e;
+}
+.contact > div:hover .bi {
+    color: white;
+}
+.friend-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.friend-name img {
+    width: 6.3rem;
+    border-radius: 50%;
+}
+.friend-name h3 {
+    margin-top: 1rem;
+    font-size: 1.07rem;
+}
+.friend-name span {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.friend-stats {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0.6rem 0;
+    line-height: 1.7rem;
+    border-top: 1px solid var(--lines);
+    border-bottom: 1px solid var(--lines);
+}
+.stat {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.card:first-child > .friend-stats::before, .card:nth-child(8) > .friend-stats::before, .card:nth-child(9) > .friend-stats::before  {
+    position: absolute;
+    content: 'VIP';
+    right: 3%;
+    top: 38%;
+    font-size: 2.6rem;
+    color: #ffa50047;
+    font-weight: 600;
+}
+.stat .bi {
+    margin-right: 0.6rem;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.card-footer button:first-child, .card-footer button:nth-child(2) {
+    padding: 0.15rem 0.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+.card-footer button:nth-child(2) {
+    background-color: red;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.card-footer button:nth-child(2):hover {
+    background-color: #d10000;
+}
+
