@@ -114,6 +114,7 @@ aside ul li:nth-child(6) {
     -o-transition: var(--trans);
 }
 .card-footer button:nth-child(2):hover {
-    background-color: #d10000;
+    background-color: var(--dark-red);
 }
+
 
